@@ -1,0 +1,27 @@
+<div ng-controller="ChecklistCtrl">
+  <div class="pull-right"><button type="button"class="btn btn-danger" ng-click="uncheck()">Un-check All</button></div>
+  <div class="page-header">
+    <h2>Checklist <small>{{remaining()}} of {{todos.length}} remaining</small></h2>
+  </div>
+  <h3>To Do:</h3>
+  <ul class="list-group">
+    <li class="list-group-item" ng-repeat="todo in filteredTodos = (todos | filter:{done:false})">
+      <div class="checkbox">
+        <label>
+          <input type="checkbox" ng-model="todo.done"> {{todo.text}}
+        </label>
+      </div>
+    </li>
+    <div class="alert alert-success" ng-hide="filteredTodos.length">You have completed this checklist, congratz !</div>
+  </ul>
+  <h3>Done :</h3>
+  <ul class="list-group">
+    <li class="list-group-item" ng-repeat="todo in todos | filter:{done:true}">
+      <div class="checkbox">
+        <label>
+          <input type="checkbox" ng-model="todo.done"> <del>{{todo.text}}</del>
+        </label>
+      </div>
+    </li>
+  </ul>
+</div>

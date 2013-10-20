@@ -1,0 +1,117 @@
+body {
+	font-family: 'Roboto', sans-serif;
+	padding-top: 70px;
+	background-color: #fff;
+	color: #444;
+}
+
+h1, h2, h3, h4, h5 {
+	font-family: 'Roboto', sans-serif;
+}
+
+.sidebar{
+	position: fixed;
+	left: 0px;
+	top: 52px;
+	height: 100%;
+	width: 70px;
+	background-color: #f7f7f7;
+	border-right: 1px solid #dfdfdf;
+	text-align: center;
+	font-size: 12px;
+}
+
+.sidebar a {
+	color: #444;
+}
+
+.sidebar span {
+	font-size: 30px;
+}
+
+.sidebar li {
+	margin-top:5px;
+	margin-bottom: 20px;
+}
+
+.fluid-container-content {
+  padding-left: 100px;
+  padding-right: 30px;
+  padding-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.fluid-container {
+  padding-left: 0px;
+  padding-right: 0px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.navbar {
+	margin-bottom: 0px;
+}
+
+.home-search {
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.home-search .form-control {
+	margin-bottom: 10px;
+}
+
+.home-search a {
+	padding-right:40px;
+	padding-left: 40px;
+}
+
+.navbar {
+	background-color: #222222;
+	color: #ddd;
+}
+
+.navbar a {
+	color: #ddd;
+}
+
+.navbar-default .navbar-brand {
+	color: #ddd;
+}
+
+.navbar .form-control {
+	border-radius: 20px;
+	background: #ddd url('../img/search.png') no-repeat 8px 8px;
+	padding-left: 25px;
+}
+
+.thumbnail {
+	border: none;
+	padding: 0px;
+}
+
+.thumb-text {
+	background-color: #f7f7f7;
+	margin-bottom: 10px;
+	padding-left: 10px;
+	border-right: 1px solid #dfdfdf;
+	border-left: 1px solid #dfdfdf;
+	border-bottom: 1px solid #dfdfdf;
+}
+
+.thumb-text a {
+	color: #2c3e50;
+}
+
+.thumb-text p {
+	padding-bottom: 5px;
+	margin-bottom: 0px;
+}
+
+.pic-link h4 {
+	font-size: 15px;
+	margin-top: 0px;
+	padding-top: 5px;
+	margin-bottom: 5px;
+}
